@@ -46,7 +46,7 @@ body {
 }
 
 .btn-imagenes{
-    width: 7%;
+    width: 20%;
     color: white;
     padding: 5px;
     margin: 8px;
@@ -671,6 +671,10 @@ input[type=submit]:hover {
     
     }
 
+    .btn-imagenes {
+        font-size: 10px;
+    }
+
 }
 @media screen and (max-width: 410px) {
     .divDescripcion {
@@ -681,7 +685,7 @@ input[type=submit]:hover {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        font-size: 10px;
+        font-size: 12px;
     }
     
     .descripcion {
