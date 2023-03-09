@@ -1,5 +1,5 @@
 // Definimos un arreglo con las rutas de las imágenes
-const imagenes = [
+const images = [
 
     "./styles/images/cab_mazda.jpg",
     "./styles/images/cab_nissan.jpg",
@@ -11,13 +11,14 @@ const imagenes = [
 
   ];
 let imagenActual = 0;
+let currentIndex = 0; // Índice de la imagen actual
 function changeBackground() {
     // Seleccionamos la cabecera y cambiamos el fondo con la imagen actual
     const cabecera = document.getElementById('cab');
-    cabecera.style.backgroundImage = `url(${imagenes[imagenActual]})`;
+    cabecera.style.backgroundImage = `url(${images[imagenActual]})`;
     
     // Incrementamos el índice de la imagen actual, o lo reiniciamos si llegamos al final
-    if (imagenActual === imagenes.length - 1) {
+    if (imagenActual === images.length - 1) {
         imagenActual = 0;
         } else {
             imagenActual++;
@@ -30,6 +31,9 @@ btnParar.addEventListener('click', stopBackgroundChange);
 
 const btnReanudar = document.getElementById('resume-button');
 btnReanudar.addEventListener('click', startBackgroundChange);
+
+const btnAnterior = document.getElementById('back-button');
+const btnSiguiente = document.getElementById('forward-button');
 
 
 function startBackgroundChange() {
@@ -45,11 +49,61 @@ btnReanudar.disabled = true;
 
 //Deshabilitar el botón para evitar problemas
 btnReanudar.addEventListener('click', ()=>{
+    startBackgroundChange;
     btnReanudar.disabled = true;
+    txtBtns.style.display = "none";
+    
 });
 //Habilitarlo cuando se pulse parar
 btnParar.addEventListener('click', ()=>{
     btnReanudar.disabled = false;
+});
+
+let aviso = true;
+let textoAviso ="La animación se para cuando se cambian las imágenes manualmente, \n presiona \"Reanudar\" para volver a activar la animación. \n (Este mensaje solo aparecerá una vez).";
+
+btnSiguiente.addEventListener('click', ()=>{
+    btnReanudar.disabled = false;
+    clearInterval(intervalId);
+    if (aviso) {
+      alert(textoAviso);
+    }
+    aviso = false;
+
+});
+
+btnAnterior.addEventListener('click', ()=>{
+    btnReanudar.disabled = false;
+    clearInterval(intervalId);
+    if (aviso) {
+      alert(textoAviso);
+    }
+    aviso = false;
+});
+
+
+function changeBackgroundManually(direction) {
+    // Cambiamos la imagen según la dirección de avance o retroceso
+    if (direction === 'forward') {
+      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+    } else if (direction === 'backward') {
+      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+    }
+  
+    // Seleccionamos la cabecera y cambiamos el fondo con la nueva imagen
+    const cabecera = document.getElementById('cab');
+    cabecera.style.backgroundImage = `url(${images[currentIndex]})`;
+  }
+
+
+const forwardButton = document.getElementById('forward-button');
+forwardButton.addEventListener('click', () => {
+  changeBackgroundManually('forward');
+});
+
+const backButton = document.getElementById('back-button');
+backButton.addEventListener('click', () => {
+  changeBackgroundManually('backward');
 });
 
 window.onload = startBackgroundChange;
