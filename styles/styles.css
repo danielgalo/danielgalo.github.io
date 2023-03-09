@@ -1,0 +1,721 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body {
+    background-image: url("./images/fondo.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navegacion {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;background-color: black;
+    color:white;
+    height: 5vh;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
+}
+
+/*TÍTULOS*/
+
+.tituloInicio {
+
+    height: 75px;
+    justify-content: space-around;
+   /* font-family: 'Do Hyeon', sans-serif; */
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4em;
+    font-style: italic;
+    text-align: left;
+    text-shadow: 3px 3px 3px black;
+    padding-left: 1vh;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    background-image: url("./images/cabecera_inicio.jpg");
+    background-repeat: no-repeat, repeat; 
+    background-size: cover;
+    color: white;
+}
+
+.btn-imagenes{
+    width: 7%;
+    color: white;
+    padding: 5px;
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ff0a0a5e;
+}
+
+.btn-imagenes:hover{
+    background-color: #ff0a0ac9;
+}
+
+.tituloToyota {
+    height: 75px;
+    justify-content: space-around;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4em;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    padding-left: 1vh;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    background-image: url("./images/cab_toyota.jpg");
+    background-repeat: no-repeat, repeat; 
+    background-size: cover;
+    color: white;
+}
+
+.tituloForm {
+    height: 75px;
+    justify-content: space-around;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4em;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    padding-left: 1vh;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    background-image: url("./images/cab_honda.jpg");
+    background-repeat: no-repeat, repeat; 
+    background-size: cover;
+    color: white;
+}
+
+.tituloMazda {
+    height: 75px;
+    justify-content: space-around;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4em;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    padding-left: 1vh;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    background-image: url("./images/cab_mazda.jpg");
+    background-repeat: no-repeat, repeat; 
+    background-size: cover;
+    color: white;
+}
+
+.tituloNissan {
+    height: 75px;
+    justify-content: space-around;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4em;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px black;
+    padding-left: 1vh;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    background-image: url("./images/cab_nissan.jpg");
+    background-repeat: no-repeat, repeat; 
+    background-size: cover;
+    color: white;
+}
+
+.inicio {
+
+    background:rgb(255, 55, 55); 
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Do Hyeon', sans-serif;
+    font-style: italic;
+    font-size: 3em;
+    padding-left: 1vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-bottom: 5px;
+    
+}
+
+/*LINKS NAVEGACIÓN*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color:red;
+}
+
+/* INICIO */
+
+.divDescripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 12%;
+    margin-right: 12%;
+    font-family: 'Rajdhani', sans-serif;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.75) 25%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.7511379551820728) 75%, rgba(255,255,255,0.45) 100%);
+    
+}
+
+.divDescripcion:hover {
+
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px; 
+    background:rgba(235, 235, 235, 0.959); 
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.774);
+    
+}
+
+.descripcion {
+    margin: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
+}
+
+
+.transGif{
+
+    width: 45vw;
+    height: auto;
+}
+
+.driftGif{
+
+    width: 35vw;
+    height: auto;
+}
+
+.tipoTransImg{
+
+    width: 35vw;
+    height: auto;
+}
+
+.motGif{
+
+    width: 35vw;
+    height: auto;
+}
+.tipoMotImg{
+
+    width: 45vw;
+    height: auto;
+}
+
+.flip:hover {
+    -webkit-transform: scaleX(-2);
+    transform: scaleX(-1);
+}
+
+.driftGif:hover {
+    -webkit-transform: scaleX(-2);
+    transform: scaleX(-1);
+}
+
+
+
+/* ESTE DIV  Y BARRA DE NAVEGACIÓN ES GENERAL 
+PARA LA PÁGINA DE TOYOTA, MAZDA Y NISSAN */
+
+.navegacionToyota {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 0, 0);
+    color:rgb(0, 0, 0);
+    height: 5vh;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 20px;
+}
+
+.aToyota:hover{
+    color:white;
+}
+
+.divToyota {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    justify-content: center;
+    text-align: center;
+
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Rajdhani', sans-serif;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.45) 0%, rgba(255,255,255,0.75) 25%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.7511379551820728) 75%, rgba(255,255,255,0.45) 100%);
+    
+}
+
+.divToyota:hover {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px; 
+    background:rgba(235, 235, 235, 0.959); 
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.863);
+
+    
+}
+
+/* TOYOTA */
+
+.inicioToyota {
+   
+    backdrop-filter: blur(5px); 
+    background:rgba(3, 2, 2, 0.925); 
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Do Hyeon', sans-serif;
+    font-style: italic;
+    font-size: 3em;
+    padding-left: 1vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-bottom: 5px;
+    
+}
+
+.toyotaLogo {
+    margin-top: 5px;
+    width: 155px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.supraGif:hover {
+    -webkit-transform: scaleX(-2);
+    transform: scaleX(-1);
+}
+
+.supraGif{
+    height: auto;
+    width: 35vw;
+}
+
+.jdmGif:hover {
+    -webkit-transform: scaleX(-2);
+    transform: scaleX(-1);
+}
+
+.supraPaul {
+    margin:10px;
+    width: 65vw;
+    height: auto;
+}
+
+.supraPaul {
+    margin:10px;
+    width: 65vw;
+    height: auto;
+}
+
+.supraStock {
+    margin:10px;
+    width: 55vw;
+    height: auto;
+}
+
+.supraSmokey {
+    margin:10px;
+    width: 25vw;
+    height: auto;
+}
+
+.ae86 {
+    margin:10px;
+    width: 55vw;
+    height: auto;
+}
+
+.keiichi {
+    margin:10px;
+    width: 55vw;
+    height: auto;
+}
+
+.celicaSainz {
+    margin:10px;
+    width: 65vw;
+    height: auto;
+}
+
+.celicaStock {
+    margin:10px;
+    width: 60vw;
+    height: auto;
+}
+
+/* MAZDA */
+
+.rx7Gif:hover {
+    -webkit-transform: scaleX(-2);
+    transform: scaleX(-1);
+}
+
+.rx7Gif{
+    height: auto;
+    width: 35vw;
+}
+.mazdaLogo{
+    height:105px;
+    width: 180px;
+}
+
+.miataStock {
+    margin:10px;
+    width: 55vw;
+    height: auto;
+}
+
+.miataGif {
+    margin:10px;
+    width: 35vw;
+    height: auto;
+}
+
+.fcStock {
+    margin:10px;
+    width: 50vw;
+    height: auto;
+}
+
+
+.fd {
+    margin:10px;
+    width: 50vw;
+    height: auto;
+}
+
+
+/* NISSAN */
+
+.gtrGif {
+    margin:10px;
+    width: 35vw;
+    height: auto;
+}
+.gtrGif:hover {
+    -webkit-transform: scaleX(-2);
+    transform: scaleX(-1);
+}
+
+
+.nissanLogo{
+    margin-top: 5px;
+    height:115px;
+    width: 165px;
+}
+
+.nissan350z {
+    margin:10px;
+    width: 50vw;
+    height: auto;
+}
+
+.S15 {
+    margin:10px;
+    width: 50vw;
+    height: auto;
+}
+
+.skyline {
+    margin:10px;
+    width: 50vw;
+    height: auto;
+}
+
+/* FORMULARIOS */
+
+.divForm{
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.divDatos{
+    width: 45vw;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background:rgba(223, 223, 223, 0.8); 
+    backdrop-filter: blur(5px); 
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.507);
+}
+
+.divDatos:hover {
+    background:rgba(0, 0, 0, 0.9); 
+    color:white;
+}
+
+.datos{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.titForms {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.aficiones{
+    margin:15px;
+    width: 40vw;;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.divCBox{
+    width: 45vw;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 15px;;
+    background:rgba(223, 223, 223, 0.8); 
+    backdrop-filter: blur(5px); 
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.507);
+}
+
+.divCBox:hover {
+    background:rgba(0, 0, 0, 0.9); 
+    color:white;
+}
+
+.divGustos{
+    width: 45vw;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 15px;;
+    background:rgba(223, 223, 223, 0.8); 
+    backdrop-filter: blur(5px); 
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.507);
+}
+
+.divGustos:hover {
+    background:rgba(0, 0, 0, 0.9); 
+    color:white;
+}
+
+.gustos{
+    margin:15px;
+    width: 40vw;;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+.divSugerencias{
+    width: 45vw;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background:rgba(223, 223, 223, 0.8); 
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.507);
+}
+
+.divSugerencias:hover {
+    background:rgba(0, 0, 0, 0.9); 
+    color:white;
+}
+
+.sugerencias{
+    width: 40vw;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+input[type=text], select {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date], select {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+  
+input[type=submit] {
+    width: 75%;
+    background-color: #d44444;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #ff0a0a;
+}
+
+
+/* PIE */
+
+.footer {
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+/* MÉTODO RESPONSIVE */
+
+@media screen and (max-width: 702px) {
+    .divDescripcion {
+        margin-left: 15vw;
+        margin-right: 10vw;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 14px;
+    }
+    .descripcion {
+        margin: 25px;
+    }
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        color:white;
+        height: 200px;
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 20px;
+    }
+
+    .navegacionToyota {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(255, 9, 9);
+        color:rgb(0, 0, 0);
+        height: 200px;
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 20px;
+    }
+
+
+    .toyotaLogo {
+        width: 180px;
+        height: 130px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+}
+@media screen and (max-width: 410px) {
+    .divDescripcion {
+        margin-left: 15vw;
+        margin-right: 10vw;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 10px;
+    }
+    
+    .descripcion {
+        margin: 25px;
+    }
+
+    .navegacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        color:white;
+        height: 200px;
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 20px;
+    }
+
+    .navegacionToyota {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(255, 9, 9);
+        color:rgb(0, 0, 0);
+        height: 200px;
+        font-family: 'Do Hyeon', sans-serif;
+        font-size: 20px;
+    }
+
+
+}
+
+/* fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+

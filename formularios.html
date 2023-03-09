@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+    <!-- FUENTE - TITULO -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="tituloForm">  90's JDM </h1>
+
+    <nav class="navegacion">
+        <p><a href="index.html">Inicio</a></p>
+        <p><a href="toyota.html">Toyota</a></p>
+        <p><a href="mazda.html">Mazda</a></p>
+        <p><a href="nissan.html">Nissan</a></p>
+        <p><a href="formularios.html">Formularios</a></p>
+    </nav>
+
+    <h1 class="inicio">FORMULARIOS</h1>
+
+    <div class="divForm">
+
+        <div class="divDatos">
+            <h4 class="titForms"> Datos personales </h4>
+            <br>
+            <form class="datos" action="/action_page.php">
+                <label>Nombre:</label>
+                <input type="text" placeholder="Introduce tu nombre"><br>
+                <label>Apellidos:</label>
+                <input type="text" placeholder="Introduce tus apellidos"><br>
+                <label>Correo electrónico:</label>
+                <input type="email" placeholder="Introduce tu dirección de correo"><br>
+                <label>Fecha de nacimiento:</label>
+                <input type="date"><br>
+                <input type="submit" placeholder="Confirmar">
+            </form> 
+        </div>
+    
+        <div class="divCBox">
+            <h4 class="titForms"> ¿Cuáles de los coches vistos te gustaría tener? </h4>
+            <form class="aficiones">
+                <br>
+                <input type="checkbox">
+                <label> Toyota Supra A80 </label><br>
+                <br>
+                <input type="checkbox">
+                <label> Toyota AE86 </label><br>
+                <br>
+                <input type="checkbox">
+                <label> Toyota Celica GT-Four </label><br>
+                <br>
+                <input type="checkbox">
+                <label> Mazda RX7 FD3S </label><br>
+                <br>
+                <input type="checkbox">
+                <label> Mazda RX7FC </label><br>
+                <br>
+                <input type="checkbox">
+                <label> Mazda Miata </label><br>
+                <br>
+                <input type="checkbox">
+                <label> Nissan Skylyne GTR Series </label><br>
+                <br>
+                <input type="checkbox">
+                <label> Nissan S15 </label><br>
+                <br>
+                <input type="checkbox">
+                <label> Nissan 350Z </label><br>
+                <br>
+                <input type="submit" placeholder="Confirmar">
+              </form>
+        </div>
+    
+        <div class="divGustos">
+            <h4 class="titForms"> ¿Cuál de las vistas anteriormente es tu marca favorita? </h4>
+            <form class="gustos">
+                <br>
+                <input type="radio">
+                <label for="html">Toyota</label><br>
+                <br>
+                <input type="radio">
+                <label for="css">Mazda</label><br>
+                <br>
+                <input type="radio">
+                <label for="javascript">Nissan</label><br>
+                <br>
+                <input type="radio">
+                <label for="java">Todas</label><br>
+                <br>
+                <input type="radio">
+                <label for="python">Ninguna</label><br>
+                <br>
+                <input type="submit" placeholder="Confirmar">
+              </form>
+        </div>
+        
+        <div class="divSugerencias">
+            <div class="sugerencias">
+                <h4 class="titForms"> Sugerencias </h4>
+                <br>
+                <form class="sugerencias" action="/action_page.php">
+                    <label for="nombre" >Comenta alguna sugerencia:</label>
+                    <input type="text" id="sugerencia" name="sugerencia" placeholder="Mi sugerencia es..."><br>
+                    <label for="quantity">Puntúa la página!</label>
+                    <input type="number" id="quantity" name="quantity" min="0" max="10"><br>
+                    <input type="submit" placeholder="Confirmar"> 
+                </form> 
+            </div>
+    </div>
+    
+    <div class="footer">
+        <p>Daniel Galo Vega - 1ºDAM </p>
+    </div>
+    
+</body>
+</html>
